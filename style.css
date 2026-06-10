@@ -1,1 +1,237 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+body{
+    background:#f4f7f2;
+    color:#333;
+    line-height:1.6;
+}
+
+/* CABEÇALHO */
+
+header{
+    background:#2e7d32;
+    color:white;
+    padding:20px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.2);
+}
+
+.logo-area{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo-area img{
+    width:70px;
+    height:auto;
+}
+
+.logo-area h1{
+    font-size:28px;
+}
+
+/* BANNER */
+
+.banner img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+}
+
+/* SEÇÕES */
+
+section{
+    padding:40px 8%;
+}
+
+h2{
+    color:#2e7d32;
+    margin-bottom:20px;
+    border-left:5px solid #2e7d32;
+    padding-left:10px;
+}
+
+/* SOBRE */
+
+.sobre{
+    background:white;
+}
+
+.sobre p{
+    text-align:justify;
+}
+
+/* CULTURA */
+
+.cultura{
+    background:#eef6ec;
+}
+
+select{
+    width:100%;
+    max-width:400px;
+    padding:12px;
+    border-radius:8px;
+    border:1px solid #ccc;
+    font-size:16px;
+}
+
+/* DIAGNÓSTICO */
+
+.diagnostico{
+    background:white;
+}
+
+textarea{
+    width:100%;
+    min-height:180px;
+    padding:15px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    resize:vertical;
+    margin-top:10px;
+    font-size:16px;
+}
+
+button{
+    margin-top:15px;
+    background:#2e7d32;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.03);
+}
+
+#resultado{
+    margin-top:25px;
+    background:#f1f8e9;
+    border-left:6px solid #2e7d32;
+    padding:20px;
+    border-radius:8px;
+}
+
+#resultado h3{
+    color:#1b5e20;
+    margin-bottom:10px;
+}
+
+/* ESTATÍSTICAS */
+
+.estatisticas{
+    background:#eef6ec;
+}
+
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:center;
+}
+
+.card{
+    background:white;
+    width:280px;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+    text-align:center;
+}
+
+.card h3{
+    color:#2e7d32;
+    margin-bottom:10px;
+    font-size:28px;
+}
+
+/* GALERIA */
+
+.galeria{
+    background:white;
+}
+
+.imagens{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.imagens img{
+    width:350px;
+    max-width:100%;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+.imagens img:hover{
+    transform:scale(1.03);
+}
+
+/* SUSTENTABILIDADE */
+
+.sustentabilidade{
+    background:#eef6ec;
+}
+
+.sustentabilidade p{
+    text-align:justify;
+}
+
+/* RODAPÉ */
+
+footer{
+    background:#2e7d32;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:20px;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:768px){
+
+    .logo-area{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .logo-area h1{
+        font-size:22px;
+    }
+
+    .banner img{
+        height:220px;
+    }
+
+    section{
+        padding:25px 5%;
+    }
+
+    .cards{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .card{
+        width:100%;
+        max-width:350px;
+    }
+
+    textarea{
+        min-height:150px;
+    }
+}
