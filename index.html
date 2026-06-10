@@ -1,1 +1,14 @@
-
+<!DOCTYPE html><html lang="pt-BR"><head>    <meta charset="UTF-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>AgroTec Diagnóstico Vegetal</title>    <link rel="stylesheet" href="style.css"></head><body>
+<header>    <div class="logo-area">        <img src="logo-agrotec.png" alt="Logo AgroTec">        <h1>AgroTec Diagnóstico Vegetal</h1>    </div></header>
+<section class="banner">    <img src="banner.png" alt="Banner"></section>
+<section class="sobre">    <h2>Sobre o Projeto</h2>    <p>        O AgroTec Diagnóstico Vegetal foi desenvolvido para auxiliar produtores rurais        na identificação de doenças em plantas através dos sintomas observados.    </p></section>
+<section class="diagnostico">    <h2>Diagnóstico de Doenças</h2>
+    <label>Descreva os sintomas observados:</label>
+    <textarea id="sintomas" placeholder="Ex.: manchas amarelas, pó branco, folhas secando..."></textarea>
+    <button onclick="diagnosticar()">Analisar</button>
+    <div id="resultado"></div></section>
+<section class="galeria">    <h2>Galeria do Projeto</h2>
+    <div class="imagens">        <img src="maquete-geral.png" alt="Projeto">        <img src="comedouro.png" alt="Imagem Agro">    </div></section>
+<footer>    <p>Projeto desenvolvido para o Programa Agrinho 2026.</p></footer>
+<script src="script.js"></script>
+</body></html>
