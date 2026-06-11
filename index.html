@@ -1,67 +1,60 @@
-<!DOCTYPE html><html lang="pt-BR">
-<head>    <meta charset="UTF-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>AgroTec Diagnóstico Vegetal</title>
-    <link rel="stylesheet" href="style.css"></head>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Biodefensivos - Agrinho</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-    <header>
-        <div class="logo-area">            <img src="logo-agrotec.png" alt="Logo AgroTec">            <h1>AgroTec Diagnóstico Vegetal</h1>        </div>
-    </header>
-    <section class="banner">
-        <img src="banner.png" alt="Banner AgroTec">
-    </section>
-    <section class="sobre">
-        <h2>Sobre o Projeto</h2>
-        <p>            O AgroTec Diagnóstico Vegetal é uma plataforma desenvolvida para auxiliar            produtores rurais na identificação preliminar de doenças agrícolas através            dos sintomas observados nas plantas.        </p>
-        <p>            Após a descrição dos sintomas, o sistema apresenta possíveis doenças,            formas de prevenção e opções de tratamento orgânico e convencional.        </p>
-    </section>
-    <section class="cultura">
-        <h2>Selecione a Cultura</h2>
-        <select id="cultura">
-            <option value="Soja">Soja</option>            <option value="Milho">Milho</option>            <option value="Feijão">Feijão</option>            <option value="Tomate">Tomate</option>            <option value="Trigo">Trigo</option>
-        </select>
-    </section>
-    <section class="diagnostico">
-        <h2>Diagnóstico de Doenças</h2>
-        <label>            Descreva os sintomas observados:        </label>
-        <textarea            id="sintomas"            placeholder="Exemplo: manchas amarelas, pó branco, folhas deformadas, mofo branco..."        ></textarea>
-        <button onclick="diagnosticar()">            Realizar Diagnóstico        </button>
-        <div id="resultado">
-            <h3>Aguardando informações...</h3>
-            <p>                Digite os sintomas observados na planta para receber um diagnóstico preliminar.            </p>
-        </div>
-    </section>
-    <section class="estatisticas">
-        <h2>Importância do Diagnóstico Precoce</h2>
-        <div class="cards">
-            <div class="card">                <h3>40%</h3>                <p>                    Redução de perdas quando a doença é identificada rapidamente.                </p>            </div>
-            <div class="card">                <h3>+ Produção</h3>                <p>                    Plantas saudáveis apresentam maior produtividade.                </p>            </div>
-            <div class="card">                <h3>- Custos</h3>                <p>                    Menor necessidade de aplicações excessivas de defensivos.                </p>            </div>
-        </div>
-    </section>
-    <section class="galeria">
-        <h2>Principais Doenças Agrícolas</h2>
-        <div class="imagens">
-            <div>                <img src="ferrugem.jpg" alt="Ferrugem">                <p>Ferrugem</p>            </div>
-            <div>                <img src="oidio.jpg" alt="Oídio">                <p>Oídio</p>            </div>
-            <div>                <img src="mildio.jpg" alt="Míldio">                <p>Míldio</p>            </div>
-            <div>                <img src="antracnose.jpg" alt="Antracnose">                <p>Antracnose</p>            </div>
-            <div>                <img src="mosaico.jpg" alt="Mosaico Viral">                <p>Mosaico Viral</p>            </div>
-        </div>
-    </section>
-    <section class="sustentabilidade">
-        <h2>Agricultura Sustentável</h2>
-        <p>            A agricultura sustentável busca produzir alimentos de qualidade sem comprometer            os recursos naturais para as futuras gerações.        </p>
-        <p>            Entre as práticas mais utilizadas estão a rotação de culturas,            o controle biológico de pragas, a preservação dos recursos hídricos            e o uso consciente de defensivos agrícolas.        </p>
-        <p>            O AgroTec incentiva o uso de alternativas orgânicas sempre que possível,            contribuindo para uma produção mais equilibrada e sustentável.        </p>
-    </section>
-    <section class="ia-rural">
-        <h2>Tecnologia Aplicada ao Campo</h2>
-        <p>            O sistema utiliza lógica computacional baseada em sintomas cadastrados            para auxiliar na identificação preliminar de doenças vegetais.        </p>
-        <p>            A ferramenta não substitui a avaliação de um profissional especializado,            mas pode servir como apoio ao produtor na tomada de decisões.        </p>
-    </section>
-    <footer>
-        <p>            Projeto AgroTec Diagnóstico Vegetal        </p>
-        <p>            Desenvolvido para o Programa Agrinho 2026        </p>
-    </footer>
-    <script src="script.js"></script>
+    <header>
+        <h1>🌿 Biodefensivo Exato</h1>
+        <p>Receitas ecológicas sob medida para o seu pulverizador.</p>
+    </header>
+
+    <main>
+        <section class="info-section">
+            <h2>Por que usar caldas naturais?</h2>
+            <p>Os biodefensivos protegem a sua lavoura de forma sustentável, sem agredir o solo, os polinizadores e a saúde de quem consome os alimentos. Calcule a dose exata para evitar desperdícios.</p>
+        </section>
+
+        <section class="app-section">
+            <h2>Calcule a sua Receita</h2>
+            
+            <form id="receitaForm">
+                <div class="input-group">
+                    <label for="problema">Qual é o problema na lavoura?</label>
+                    <select id="problema" required>
+                        <option value="" disabled selected>Selecione a praga ou doença...</option>
+                        <option value="pulgoes">Pulgões e Cochonilhas (Insetos sugadores)</option>
+                        <option value="lagartas">Lagartas e Besouros (Insetos mastigadores)</option>
+                        <option value="fungos">Fungos nas folhas (Oídio, Ferrugem)</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="litros">Capacidade do Pulverizador (em Litros):</label>
+                    <input type="number" id="litros" placeholder="Ex: 5 ou 20" required min="1">
+                </div>
+
+                <button type="submit">Calcular Receita Proporcional</button>
+            </form>
+
+            <div id="resultado" class="resultado-oculto">
+                <h3>Sua Receita Calculada:</h3>
+                <h4 id="nome-receita">Receita</h4>
+                
+                <div class="receita-box">
+                    <h4>📝 Ingredientes Exatos:</h4>
+                    <ul id="lista-ingredientes"></ul>
+                    
+                    <h4 class="mt-15">👨‍🌾 Modo de Preparo e Aplicação:</h4>
+                    <p id="modo-preparo"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
