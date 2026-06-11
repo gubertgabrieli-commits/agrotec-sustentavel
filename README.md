@@ -33,7 +33,7 @@ Para garantir a simplicidade e a viabilidade do projeto, utilizamos apenas as te
 
 Como o site está hospedado no GitHub Pages, pode aceder-lhe diretamente de qualquer navegador de internet, seja no telemóvel ou no computador, através do link gerado pelo GitHub:
 
-**[Insira aqui o link do seu GitHub Pages gerado]**
+**[https://gubertgabrieli-commits.github.io/agrotec-sustentavel/]**
 
 ---
 
